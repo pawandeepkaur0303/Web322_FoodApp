@@ -1,4 +1,5 @@
 const express = require("express");
+require('dotenv').config({path:"./config/keys.env"});
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
@@ -353,7 +354,7 @@ app.get("/welcome",(req,res)=>{
     })
 });
 
-app.listen(process.env.PORT || 3000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log(`The webserver is up and running`);
 })
 
