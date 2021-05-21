@@ -1,0 +1,366 @@
+<!--<div class="form2">
+        
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Login</h1>
+          
+          <form method="POST" action="log">
+          
+          <div class="top-row">
+          </div>
+
+
+          <div class="field-wrap">
+			  <p>
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+			</p>
+			<p>
+
+			
+            <input type="email" name = "Email" id= "Email"/></p>
+             <div class = "error">{{this.mError}}</div>
+          </div>
+
+         
+          
+          <div class="field-wrap">
+			  <p>
+            <label>
+              Password<span class="req">*</span>
+            </label>
+			</p>
+          <p><input type="password" name="Password" id="Password" /></p>
+                   <div class = "error">{{this.pError}}</div>
+          </div>
+          
+   
+
+          <button type="submit" class="button button-block"/>Login</button>
+          
+          </form>
+
+        </div>
+        
+        
+      </div>
+      
+</div> -->
+<!--
+
+<style>
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+  background:$body-bg;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:$main;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+
+.form2 {
+  background:rgba($form-bg,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
+}
+
+
+h1 {
+  text-align:center;
+  color:$white;
+  font-weight:$thin;
+  margin:0 0 40px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:$white;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:$main;
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$main;
+  color:$white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+</style>
+
+
+-->
+
+
+	<section id="section">
+
+	
+		<div id="signup-win">
+		<div id="title">Login Here</div>
+        <br><br>
+		       
+		<table width="90%" border="0" style="margin-left: 15px;">
+			<form method="POST" action="log">
+			<tr>
+				<td>
+					<label>Email</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" class="icon" name="Email" id="Email" placeholder="Enter Email">
+					<p> <div class = "error">{{this.mError}}</div></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Password</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+					<input type="password" id="Password" name="Password" class="icon" placeholder="Enter password">
+					<p><div class = "error">{{this.pError}}</div></p>
+				</td>
+			</tr>
+			
+            <br><br>
+			<tr>
+				<td align="center">
+			<br><br>
+					 <button class="btn" type="submit"/>Login</button>
+				</td>
+			</tr>
+			</form>
+		</table>
+			
+	</div>
+	</section>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+	<style>
+		#signup-win {
+			width: 350px;
+			height: 500px;
+			;
+			background-color: #f0f0f0;
+			margin: auto;
+			margin-top: 5%;
+			border: 2px gray solid;
+			box-shadow: 0px 0px 15px 1px black;
+
+
+		}
+
+		#signup-win:hover {
+			box-shadow: 0px 0px 15px 5px black;
+		}
+
+		body {
+			background-color: white;
+		}
+
+	    
+		
+		#title {
+			float: left;
+			margin-top: 10px;
+			font-size: 26px;
+			margin-left: 10px;
+			;
+		}
+
+
+		tr {
+			line-height: 35px;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			line-height: 30px;
+			text-align: center;
+			font-size: 20px;
+			color: black;
+			outline: none;
+
+
+		}
+
+		input[type="text"]:focus {
+			border: 1px black solid;
+
+		}
+
+		input[type="password"]:focus {
+			border: 1px black solid;
+		}
+
+		label {
+			font-weight: bolder;
+			color: black;
+		}
+
+		.btn {
+			color: white;
+			background-color: maroon;
+			width: 120px;
+			text-align: center;
+
+			margin-left: 10px;
+			padding: 10px;
+			text-decoration: underline;
+			font-weight: bolder;
+			cursor: pointer;
+			border: 1px black solid;
+			margin-top: 10px;
+
+		}
+
+
+	</style> 

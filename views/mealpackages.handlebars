@@ -1,0 +1,132 @@
+
+<br><center>
+<div id="btn1">
+    <h1>Best packages with best deals are here...</h1>
+</div>
+</center>
+
+
+<section id="Boxes">
+  <div class="row">
+    {{#each meals}}
+    <a href="/view/product/{{this._id}}">
+      <div class="column">
+        <br>
+        <img src="data:image/{{this.mealImage.contentType}};base64,{{this.mealImage.data}}">
+        <b>
+          <center>{{this.name}}</center>
+
+        </b>
+        <br>
+        category: {{this.cate}} <br>
+        Meal Count: {{this.number}} <br>
+        Price: {{this.price}} <br><br>
+        <a href="/mealpackages?name={{name}}" class="btn btn-primary">Description</a>
+   
+      </div>
+    </a>
+    {{/each}}
+  </div>
+</section>
+
+
+<style>
+  
+ 
+  .column {
+    text-align: center;
+  }
+
+  .column img {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+  }
+
+  .row {
+    padding: 5px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+</style>
+<br>
+<div id="container1">
+    {{#each data}}
+<div id="child1">
+    <img src="/image/{{this.imgPath}}">
+    <br>
+     {{this.title}}
+     <br>
+     ${{this.price}}
+    <br>
+    Number of Meals: {{this.Meals}}
+</div>
+{{/each}}
+
+</div>
+<br>
+<center>
+<div class="btn">
+    Click to see more meals -->
+</div>
+</center>
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    
+		.btn {
+			color: white;
+			background-color: maroon;
+			text-align: center;
+            width: 200px;
+			margin-left: 10px;
+			padding: 10px;
+			text-decoration: none;
+			font-weight: bolder;
+			cursor: pointer;
+			border: 1px black solid;
+			margin-top: 10px;
+            border-radius: 20px;
+		}
+        #btn1 {
+			color: white;
+			background-color: maroon;
+			text-align: center;	
+            width: auto;
+			margin-left: 10px;
+			padding: 10px;
+			text-decoration: none;
+			font-weight: bolder;
+			cursor: pointer;
+			border: 1px black solid;
+			margin-top: 10px;
+            border-radius: 20px;
+			display: block;
+		}
+</style>

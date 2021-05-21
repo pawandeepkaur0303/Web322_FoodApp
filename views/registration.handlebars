@@ -1,0 +1,486 @@
+<!--<div class="form1">
+        
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form method="POST" action="send">
+          
+          <div class="top-row">
+
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" name="Fname" id ="Fname"  />
+              <div class = "error">{{this.fError}}</div>
+            </div>
+
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text" name="Lname" id="Lname" />
+              <div class = "error">{{this.fError}}</div>
+            </div>
+          </div>
+
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" name = "Email" id= "Email"/>
+             <div class = "error">{{this.mError}}</div>
+          </div>
+
+         
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password" name="Password" id="Password" />
+                   <div class = "error">{{this.pError}}</div>
+          </div>
+          
+   
+
+          <button type="submit" class="button button-block"/>Sign up</button>
+          
+          </form>
+
+        </div>
+        
+        
+      </div>
+</div> 
+
+
+<style>
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+  background:$body-bg;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:$main;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+
+.form1 {
+  background:rgba($form-bg,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
+}
+
+
+h1 {
+  text-align:center;
+  color:$white;
+  font-weight:$thin;
+  margin:0 0 40px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:$white;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:$main;
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$main;
+  color:$white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+</style>
+-->
+
+
+
+	<section id="section">
+
+	
+		<div id="signup-win">
+		<div id="title">Sign up Here</div>
+        <br><br>	
+        
+		<table width="90%" border="0" style="margin-left: 15px;">
+      <form method="POST" action="send">
+      <tr>
+				<td>
+					<label>First name</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" class="icon" name="Fname" id="Fname" placeholder="Enter first name">
+          <p><div class = "error">{{this.fError}}</div></p>
+				</td>
+			</tr>
+      <tr>
+				<td>
+					<label>Last name</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" class="icon" name="Lname" id="Lname" placeholder="Enter last name">
+          <p><div class = "error">{{this.fError}}</div></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Email</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" class="icon" name="Email" id="Email" placeholder="Enter email">
+          <p><div class = "error">{{this.mError}}</div></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Password</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+					<input type="password" id="Password" name="Password" class="icon" placeholder="Set a password">
+					<p><div class = "error">{{this.pError}}</div></p>
+				</td>
+			</tr>
+			
+      	<tr>
+				<td>
+					<label>Employee</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+					<input type="text" id="Employee" name="Employee" class="icon" placeholder="">
+						<p><div class = "error">{{this.pError}}</div></p>
+				</td>
+			</tr>
+
+			<tr>
+        <br><br>
+				<td align="center">
+					
+           <button type="submit" class="btn"/>Sign up</button>
+				</td>
+			</tr>
+       </form>
+		</table>
+   
+	</div>
+	</section>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+	<style>
+		#signup-win {
+			width: 400px;
+			height: 580px;
+			;
+			background-color: #f0f0f0;
+			margin: auto;
+			margin-top: 5%;
+			border: 2px gray solid;
+			box-shadow: 0px 0px 15px 1px black;
+
+
+		}
+
+		#signup-win:hover {
+			box-shadow: 0px 0px 15px 5px black;
+		}
+
+		body {
+			background-color: white;
+		}
+
+	    
+		
+		#title {
+			float: left;
+			margin-top: 10px;
+			font-size: 26px;
+			margin-left: 10px;
+			;
+		}
+    
+		tr {
+			line-height: 35px;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			line-height: 30px;
+			text-align: center;
+			font-size: 20px;
+			color: black;
+			outline: none;
+
+
+		}
+
+		input[type="text"]:focus {
+			border: 1px black solid;
+
+		}
+
+		input[type="password"]:focus {
+			border: 1px black solid;
+		}
+
+		label {
+			font-weight: bolder;
+			color: black;
+		}
+
+		.btn {
+			color: white;
+			background-color: maroon;
+			width: 120px;
+			text-align: center;
+
+			margin-left: 10px;
+			padding: 10px;
+			text-decoration: underline;
+			font-weight: bolder;
+			cursor: pointer;
+			border: 1px black solid;
+			margin-top: 10px;
+
+		}
+
+
+	</style>
+
+
+
+
+
+
+
+<!--<center><h1 class="btn"> Sign up here</h1></center>
+<form name="feedback" action="https://httpbin.org/post" method="post">
+    <label for="feedback-username"> First name</label>
+    <input
+      id="feedback-username"
+      name="firstname"
+      autocomplete="firstname"
+      type="text"
+      tabindex="1"
+    />
+    <label for="feedback-lastname"> Last name</label>
+    <input
+      id="feedback-lastname"
+      name="lastname"
+      autocomplete="lastname"
+      type="text"
+      tabindex="1"
+    />
+    
+    <label for="feedback-email">Email Address</label>
+    <input
+      id="feedback-email"
+      name="email"
+      autocomplete="email"
+      type="email"
+      tabindex="2"
+    />
+    <label for="feedback-adress"> Address</label>
+    <input
+      id="feedback-adress"
+      name="address"
+      autocomplete="address"
+      type="text"
+      tabindex="1"
+    />
+    <label for="city">City</label>
+    <input
+      type="text"
+      list="city"
+      name="problem"
+      tabindex="4"
+    />
+    <datalist id="city">
+      <option value="Toronto"> </option>
+      <option value="Brampton"> </option>
+      <option value="Scarborough"> </option>
+      <option value="North York"> </option>
+      <option value="Markham"> </option>
+      <option value="Caledon"> </option>
+    </datalist>
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="0/1-XXX-XXX-XXXX"  pattern="[0-1]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    <label for="phone">Postal Code:</label>
+    <input type="text" id="postal" name="postal" pattern="[A-Z]{1}[0-9]{1}[A-Z]{1}[0-9]{1}[A-Z]{1}[0-9]{1}">
+    
+    <input style="display: none;" type="text" id="mytext">
+    <textarea
+      id="feedback-message"
+      name="message"
+      rows="10"
+      tabindex="5"
+      placeholder="Any message for us!"
+    ></textarea>
+    <input bname="myname" value="Pawandeep Kaur Chauhan" hidden>
+    <div class="buttons">
+      <input class="btn" type="submit" name="Submit" value="Sign up" tabindex="7" />
+      <input class="btn" type="reset" name="Reset" value="Reset" tabindex="8" />
+    </div>
+  </form>
+  <br><br><br>
+  -->

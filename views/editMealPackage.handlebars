@@ -1,0 +1,169 @@
+
+
+	<section id="section">
+
+	
+		<div id="signup-win">
+		<div id="title">Edit meal Package</div>
+        <br><br>	
+        
+		<table width="90%" border="0" style="margin-left: 15px;">
+      <form method="POST" action="store/meal/package" id="form-css" enctype="multipart/form-data">
+      <tr>
+				<td>
+					<label>Meal package name</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" class="form-control" id="name" name ="name">
+				</td>
+			</tr>
+      <tr>
+				<td>
+					<label>Price</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" class="form-control" id="price" name ="price">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Description</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					 <input type="text" class="form-control" id="desc" name ="desc">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Category</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+					 <input type="text" class="form-control" id="cate" name ="cate">
+				</td>
+			</tr>
+			
+      	<tr>
+				<td>
+					<label>Number of Meals</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+
+					 <input type="number" class="form-control" id="number" name ="number">
+				</td>
+			</tr>
+
+			<tr>
+        <br><br>
+				<td align="center">
+			 <button type="submit" class="btn">Edit Meal Pack</button>
+				</td>
+			</tr>
+       </form>
+		</table>
+   
+	</div>
+	</section>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+	<style>
+		#signup-win {
+			width: 400px;
+			height: 580px;
+			;
+			background-color: #f0f0f0;
+			margin: auto;
+			margin-top: 5%;
+			border: 2px gray solid;
+			box-shadow: 0px 0px 15px 1px black;
+
+
+		}
+
+		#signup-win:hover {
+			box-shadow: 0px 0px 15px 5px black;
+		}
+
+		body {
+			background-color: white;
+		}
+
+	    
+		
+		#title {
+			float: left;
+			margin-top: 10px;
+			font-size: 26px;
+			margin-left: 10px;
+			;
+		}
+    
+		tr {
+			line-height: 35px;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			line-height: 30px;
+			text-align: center;
+			font-size: 20px;
+			color: black;
+			outline: none;
+
+
+		}
+
+		input[type="text"]:focus {
+			border: 1px black solid;
+
+		}
+
+		input[type="password"]:focus {
+			border: 1px black solid;
+		}
+
+		label {
+			font-weight: bolder;
+			color: black;
+		}
+
+		.btn {
+			color: white;
+			background-color: maroon;
+			width: 200px;
+			text-align: center;
+
+			margin-left: 10px;
+			padding: 10px;
+			text-decoration: underline;
+			font-weight: bolder;
+			cursor: pointer;
+			border: 1px black solid;
+			margin-top: 10px;
+
+		}
+
+
+	</style>
+
+
+

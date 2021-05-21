@@ -1,0 +1,120 @@
+<center>
+<h1 id="btn1">
+Meals and grocery delivered.
+</h1>
+<br>
+<h3>Feel the same taste of our food as in your mum's food.</h3>
+</center>
+<br><br>
+
+<div id="container">
+   <div id="child">
+       <img src="\image\grid4.jpg">
+    <h2>Pick your order.</h2>
+   </div> 
+   <div id="child">
+       <img src="\image\grid2.jpg">
+  <h2>Cooked and Delivered.</h2>
+   </div> 
+   <div id="child">
+       <img src="\image\arrow.png">
+       </div>
+   <div id="child">
+       <img src="\image\grid1.png">
+  <h2>Eat and enjoy, No cooking.</h2>
+   </div> 
+   <div id="child">
+       <img src="\image\grid5.jpg">
+  <h2>Repeat, Repeat, Repeat.</h2>
+   </div> 
+</div>
+<div id="congif">
+   <div id="chgif" style="opacity: 0.5;"> 
+    <img src="\image\Pick_1.gif">
+   </div> 
+   <div id="chgif" style="opacity: 0.5;">
+  <img src="\image\heat.gif">
+   </div> 
+   <div id="chgif" style="opacity: 0.5;">
+  <img src="\image\eat_1_1.gif">
+   </div> 
+   <div id="chgif" style="opacity: 0.5;">
+  <img src="\image\repeat---Copy.gif">
+   </div> 
+</div>
+<br>
+<br>
+
+<center><div id="btn1">Give a chance to our chef once and you will get addicted to their food !!</div></center>
+<br><br>
+
+<div id="container">
+    {{#each data}}
+<div id="child">
+    <img src="/image/{{this.imgPath}}">
+    <br>
+     {{this.title}}
+     <br>
+     ${{this.price}}
+    
+</div>
+{{/each}}
+</div>
+<br><br>
+<center>
+<div class="btn">
+    Click to see more meals -->
+</div>
+</center>
+<br><br>
+<style>
+    
+		.btn {
+			color: white;
+			background-color: maroon;
+			text-align: center;
+            width: 200px;
+			margin-left: 10px;
+			padding: 10px;
+			text-decoration: none;
+			font-weight: bolder;
+			cursor: pointer;
+			border: 1px black solid;
+			margin-top: 10px;
+            border-radius: 20px;
+		}
+        #btn1 {
+			color: white;
+			background-color: maroon;
+			text-align: center;
+            width: auto;
+			margin-left: 10px;
+			padding: 10px;
+			text-decoration: none;
+			font-weight: bolder;
+			cursor: pointer;
+			border: 1px black solid;
+			margin-top: 10px;
+            border-radius: 20px;
+            display: block;
+		}
+
+        #congif{
+    display: flex;
+    
+    margin: auto;
+    justify-content:  space-evenly;
+    width: 100%;
+    
+    
+}
+ #chgif{
+    width: 300px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 15px;
+}
+</style>

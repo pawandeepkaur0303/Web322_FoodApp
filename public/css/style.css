@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+}
+#top-head{
+text-align: center;
+background-color: maroon;
+color: white;
+font-size: smaller;
+font-weight: bolder;
+font-family: Comic Sans MS;
+padding: 5px;
+}
+a{
+text-decoration: none;
+color: gray;
+font-family: Comic Sans MS;
+font-weight: bolder;
+padding: 10px;
+font-size: large;
+display: inline;
+}
+nav{
+
+padding: 30px;
+display: inline;
+}
+li{
+text-align: center;
+display: inline;
+margin: 15px;
+}
+#logo{
+display: inline; 
+
+}
+#footer{
+    background-color: black;
+    opacity: 0.90;
+    color: white;
+}
+ #con{
+    display: flex;
+    margin: auto;
+    justify-content:  space-evenly;
+    width: 1000px;
+    
+    
+}
+ #ch{
+    width: 300px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 15px;
+}
+#h{
+    font-family: Comic Sans MS;
+    font-size: 15px;
+    
+}
+h2{
+  color: black;
+  opacity: 0.5;
+}
+#f{
+    background-color: black;
+    color: white;
+   
+}
+input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+
+#hero img{
+width: 100%;
+}
+#logo img{
+width: 45px; max-width: 100%; max-height: 200px; display: inline; 
+padding-right: 500px; padding-top: 20px; padding-bottom: 20px;;
+}
+#fb img{
+width: 90px; max-width: 100%; max-height: 300px; display: inline; 
+padding-top: 20px; padding-bottom: 20px;;
+}
+
+form {
+  
+    margin-top: 3em;
+    padding: 2em;
+    border: 1px solid black;
+  
+  
+    max-width: 800px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  
+    display: grid;
+    grid-template-columns: .50fr 1fr;
+   
+    align-items: center;
+    grid-gap: 20px;
+  }
+  
+  form label {
+  
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.3em;
+    font-size: 1em;
+    border: 1px solid rgb(206, 212, 218);
+    border-radius: 0.25em;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: 3px solid lightskyblue;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:focus {
+    background-color: #0069d9;
+  }
+  
+  textarea {
+    grid-column: 1 / 3;
+  }
+  
+  .error{
+    color: brown;
+  }
+  .buttons {
+    grid-column: 2 / 3;
+    text-align: right;
+  }
+  #container{
+    display: flex;
+    margin: auto;
+    justify-content:  space-evenly;
+    width: 100%; 
+}
+ #child{
+    width: 300px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 15px;
+    
+}
+#child img{
+  border-radius: 20px;
+}
+#container1{
+  display: flex;
+  margin: auto;
+  justify-content:  space-evenly;
+  width: 100%; 
+}
+#child1{
+  width: 300px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Comic Sans MS;
+  font-size: 15px;
+  
+}
+#child1 img{
+border-radius: 20px;
+padding: 5px;
+width: 300px;
+height: 300px;
+
+}
+#btn1 {
+  color: white;
+  background-color: maroon;
+  
+  text-align: center;
+        width: 1000px;
+  margin-left: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 1px black solid;
+  margin-top: 10px;
+        border-radius: 20px;
+}
+.btn {
+  color: white;
+  background-color: maroon;
+  
+  text-align: center;
+        width: 200px;
+  margin-left: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+  border: 1px black solid;
+  margin-top: 10px;
+        border-radius: 20px;
+}
+@media screen and (max-width: 1024px) {
+	#container1{
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+  }
+  #con{
+    display: block;
+    width: 100%;
+}
+#container{
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+}
+#chgif{
+  display: none;
+}
+
+#conw{
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+}
+
+}
